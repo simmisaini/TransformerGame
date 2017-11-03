@@ -1,31 +1,13 @@
-# TransformerWar
+TransformerWar
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+This project was generated with angular-cli version 1.0.0-beta.28.3.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Aequilibrium does love transforming... people, lives, teams, companies. And there’s no better representation of transformation than Hasbro’s Transformers, the classic television series featuring heroic Autobots raging their battle to destroy the evil forces of the Deceptions. Please watch this video: https://www.youtube.com/watch?v=nLS2N9mHWaw And write the following in whatever language you like: The Transformers are at war and you​ are in charge of settling the score! You’re to evaluate who wins a fight between the Autobots and the Decepticons. Here are the rules. Each Transformer has the following criteria on their tech spec (see http://www.ntfa.net/ntfa/techspecs/index.php?cat=Gen1&group=DeceptPZ&char=Predaking for an example): ● Strength ● Intelligence ● Speed
 
-## Code scaffolding
+● Endurance ● Rank ● Courage ● Firepower ● Skill All of these criteria are ranked from 1 to 10. The “overall rating” of a Transformer is the following formula: (Strength + Intelligence + Speed + Endurance + Firepower) Each Transformer must either be an Autobot or a Deception. Your program should take input that describes a group of Transformers and based on that group displays: a. The number of battles b. The winning team c. The surviving members of the losing team The basic rules of the battle are: ● The teams should be sorted by rank and faced off one on one against each other in order to determine a victor, the loser is eliminated ● A battle between opponents uses the following rules: ○ If any fighter is down 4 or more points of courage and 3 or more points of strength compared to their opponent, the opponent automatically wins the face-off regardless of overall rating (opponent has ran away) ○ Otherwise, if one of the fighters is 3 or more points of skill above their opponent, they win the fight regardless of overall rating ○ The winner is the Transformer with the highest overall rating ● In the event of a tie, both Transformers are considered destroyed ● Any Transformers who don’t have a fight are skipped (i.e. if it’s a team of 2 vs. a team of 1, there’s only going to be one battle) ● The team who eliminated the largest number of the opposing team is the winner Special rules: ● Any Transformer named Optimus Prime or Predaking wins his fight automatically regardless of any other criteria ● In the event either of the above face each other (or a duplicate of each other), the game immediately ends with all competitors destroyed For example, given the following input: Soundwave, D, 8,9,2,6,7,5,6,10 Bluestreak, A, 6,6,7,9,5,2,9,7
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Hubcap: A, 4,4,4,4,4,4,4,4 The output should be: 1 battle Winning team (Decepticons): Soundwave Survivors from the losing team (Autobots): Hubcap
 
-## Build
+Testing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+-- Added various e2e tests to test application functionality. -- testcases are in e2e/app.e2e-spec.ts file -- Run ng e2e to execute the end-to-end tests via Protractor. Before running the tests make sure you are serving the app via ng serve.
